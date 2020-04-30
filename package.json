@@ -5,7 +5,8 @@
   "dependencies": {
     "imap": "^0.8.19",
     "mailparser": "^2.4.3",
-    "async": "^2.6.3"
+    "async": "^2.6.3",
+    "snyk": "^1.316.1"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,9 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "test.js"
-  }
+    "test": "test.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
